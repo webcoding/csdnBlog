@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1810C3E1194F2B5100778E6E"
-               BuildableName = "csdnBlog.app"
+               BuildableName = "&#x535a;&#x5ba2;&#x52a9;&#x624b;.app"
                BlueprintName = "csdnBlog"
                ReferencedContainer = "container:csdnBlog.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1810C3E1194F2B5100778E6E"
-            BuildableName = "csdnBlog.app"
+            BuildableName = "&#x535a;&#x5ba2;&#x52a9;&#x624b;.app"
             BlueprintName = "csdnBlog"
             ReferencedContainer = "container:csdnBlog.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1810C3E1194F2B5100778E6E"
-            BuildableName = "csdnBlog.app"
+            BuildableName = "&#x535a;&#x5ba2;&#x52a9;&#x624b;.app"
             BlueprintName = "csdnBlog"
             ReferencedContainer = "container:csdnBlog.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1810C3E1194F2B5100778E6E"
-            BuildableName = "csdnBlog.app"
+            BuildableName = "&#x535a;&#x5ba2;&#x52a9;&#x624b;.app"
             BlueprintName = "csdnBlog"
             ReferencedContainer = "container:csdnBlog.xcodeproj">
          </BuildableReference>
