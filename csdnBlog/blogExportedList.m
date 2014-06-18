@@ -31,6 +31,11 @@
     //设置 navigationItem 标题
     self.navigationItem.title = @"已导列表";
     
+    if (Screen_height < 568)
+    {
+        self.myTableView.frame = CGRectMake(0, 108, 320, Screen_height-108);
+    }
+    
     //获取完整路径 以及字典和数组的初始化
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];

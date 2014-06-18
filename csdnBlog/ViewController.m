@@ -409,16 +409,15 @@
     //防止重复访问一个网页
     if ([nowUrl isEqualToString:[webView stringByEvaluatingJavaScriptFromString:@"document.location.href"]])
     {
+        //移除HUD
         [SVProgressHUD dismiss];
         return;
     }
     else
     {
         nowUrl = [webView stringByEvaluatingJavaScriptFromString:@"document.location.href"];
-        NSLog(@"%@", nowUrl);
         NSArray *eachLines = [nowUrl componentsSeparatedByString:@"/"];
 
-        NSLog(@"%@",eachLines);
     }
     
     
@@ -444,9 +443,10 @@
             isExportOnViewOne = false;
             //获取详细内容
             NSString *lJs = @"document.getElementById(\"article_content\").innerHTML";
+            NSString *lHtml1 = [webView stringByEvaluatingJavaScriptFromString:lJs];
+
             //获取标题
             NSString *lJs2 = @"document.getElementById(\"article_details\").getElementsByClassName(\"article_title\")[0].getElementsByTagName(\"a\")[0].innerText";
-            NSString *lHtml1 = [webView stringByEvaluatingJavaScriptFromString:lJs];
             NSString *lHtml2 = [webView stringByEvaluatingJavaScriptFromString:lJs2];
             
             //获取完整路径 以及字典和数组的初始化
@@ -541,6 +541,7 @@
             //第一次进入:获取各个文章url   第二次进入:逐个获取
             if (isFirst_)
             {
+                //显示HUD
                 [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
                 //获取博客数目
                 NSString *bLength = @"document.getElementsByClassName(\"list_item list_view\").length";
